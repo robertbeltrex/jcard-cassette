@@ -1,0 +1,337 @@
+J-Card Template: Changes
+
+—Update 2
+
+——Revision 4, 04/04/2023.
+- PWA:
+  - Updated NET-Installer.
+- Window:
+  - Reset title after initialization.
+
+——Revision 3, 03/30/2023.
+- Form:
+  - Changed switch entry styles to row.
+  - Ungrouped output controls.
+- PWA:
+  - Updated NET-Installer.
+- Script:
+  - Use last known valid value for invalid but empty entries.
+- View:
+  - Fluidified accordion button widths.
+
+——Revision 2, 03/19/2023.
+- UI1:
+  - Emulate UI2 form layout on insufficient space.
+- Window:
+  - Trim file name on title.
+
+——Revision 1, 03/17/2023.
+- Form:
+  - Ungrouped template flag options.
+    - Moved corresponding note to `Help`.
+- Help:
+  - Removed preview marker (β).
+- Save:
+  - Use ECC with `File name`.
+- Script:
+  - Apply URL parameter hooks after initial update.
+  - `reverse` URL parameter hook.
+
+——Revision 0, 03/15/2023.
+- `Height` to adjust the cover height factor.
+  - Does not affect `Fill cover`.
+- Removed `Black and white`.
+- Removed `Print 2`.
+  - `Short spine` takes its place.
+- Removed Update 2 notices.
+- Form:
+  - Cleaned up `Font family` datalist ("suggestions").
+  - Grouped cover controls into a `Cover` accordion.
+  - Note that cover images must be saved separately.
+- Save:
+  - Fixed `Follow titles`.
+- UI:
+  - Link directly to Gateway's contact page.
+- UI2:
+  - Use same-sized fields per form (sub)section for visual uniformity.
+
+—Update 1
+
+——Revision J, 03/08/2023.
+- Form:
+  - Moved `Font size factor` into `Application` under `More`.
+- Load:
+  - Drag and drop support.
+- PWA:
+  - Updated NET-Installer.
+- Script:
+  - Fixed ECC timeout operations on drain and flush.
+  - `dark` and `ecc` URL parameter hooks.
+- UI:
+  - Regrouped `Help` and `View` sections to `More`.
+
+——Revision I, 03/07/2023.
+- Event Condensing Coalescer (ECC).
+- Help:
+  - Rearranged subsections.
+- Script:
+  - Factored out more parts shared with NET-Viewer.
+
+——Revision H, 03/06/2023.
+- Load:
+  - Fixed blank discard message.
+- PWA:
+  - Forced header, navigation, and footer in NET-Installer.
+- Script:
+  - Factored out most parts shared with NET-Viewer.
+
+——Revision G, 03/04/2023.
+- Form:
+  - Moved `Correction` to `Font size factor`.
+- Help:
+  - Reworded most parts.
+- Load:
+  - Moved `Load cover` to `Upload cover`.
+    - Consistent with `Download cover`.
+  - Prompt on file sizes greater than 1 MiB.
+- View:
+  - Moved most controls up a level.
+  - Reworded `Force dark` description.
+
+——Revision F, 03/03/2023.
+- Form:
+  - `Correction` to correct font size errors.
+  - Moved the no-save marker to just before the label suffix.
+- Load:
+  - Alert JSON parse errors.
+- Preview:
+  - Replaced template wrapper with <div>.
+- Script:
+  - Modification anesthesia mechanism.
+- UI:
+  - Fixed skipping heading levels.
+  - `Privacy` jump menu link.
+- UI2:
+  - Cap panel width under the column layout.
+  - Fixed dangling fields.
+  - Fixed jump menu font size.
+  - Increased layout switch threshold width to 720px.
+    - Consistent with UI1.
+  - Increased panel minimum width.
+  - Tweaked panel padding.
+- View:
+  - `Force dark`.
+- Window:
+  - Always print the file name on title.
+
+——Revision E, 02/27/2023.
+- Form:
+  - `Justify` alignment for footer and contents.
+  - Reduced explicitness of some groupings.
+  - Reformatted output-region-specific controls.
+  - Removed tooltips.
+  - Split side label and content entries to their own fields.
+  - Unified HTML using conditionals for variations.
+- Print:
+  - Regrouped setup fields.
+  - Removed `Outline` notice.
+- Template:
+  - Block-aligned front contents to center.
+  - Fixed front title width on hidden front contents.
+- UI:
+  - Appended colon (:) to text field labels.
+- UI2:
+  - Use only row `Form` fields.
+- View:
+  - Regrouped interface controls.
+
+——Revision D, 02/24/2023.
+- Help:
+  - Fixed UI template link.
+- Save:
+  - Fixed blank data file since Revision B.
+- UI1:
+  - Removed template page menu item.
+
+——Revision C, 02/22/2023.
+- Template:
+  - Fixed back visibility not changing.
+
+——Revision B, 02/19/2023.
+- Form:
+  - `Black and white`
+  - Fixed `Reset Cover` not affecting `Cover image`.
+  - Grouped some template flag options into an accordion.
+- Print:
+  - Outline color follows that of the template text.
+- PWA:
+  - Updated NET-Installer.
+- Script:
+  - Extended element models to all others.
+  - Form entry persistence flag.
+  - Replaced deprecated HTML styling tags with CSS equivalents.
+- Template:
+  - Disabled user agent text size adjustments.
+  - Guide color follows that of the text.
+  - Use CSS custom properties for form-explicit style values.
+- UI2:
+  - Fixed menu type not following layout change.
+  - Fixed residual borders on print.
+  - Moved line menu to control panel.
+  - Raised line menu.
+  - Removed panel borders.
+
+——Revision A, 02/17/2023.
+- Overhauled most of everything.
+- Deprecated `Print 2`.
+- New user interface (UI2).
+- Progressive web application (PWA).
+- Form:
+  - `Back contents visibility`.
+  - `Reset Cover`.
+  - `Reverse`.
+  - `Short spine` (0.4 in).
+  - Changed no-save marker to '+'.
+  - Heading for upper and lower note contents.
+  - Moved `Outline` to print shop.
+  - Replaced "Content" with "Contents".
+  - Replaced deprecated HTML styling tags with CSS equivalents.
+  - `Short back` tooltip (0.6 in).
+- Help:
+  - About.
+  - Preview marker (β).
+- Load:
+  - Load cover (separately).
+  - Print empty MIME types.
+- Preview:
+  - Center template.
+  - Wrap template with <output>.
+- Print:
+  - Established print shop.
+  - `Count`.
+  - `Margin`.
+  - `Opacity`.
+  - `Start`.
+- Save:
+  - Custom file name.
+  - Download cover (separately).
+- Script:
+  - Conditional listening of the `beforeunload` event.
+  - Modularized everything where sensible.
+  - Safe values.
+- Template:
+  - `Outline` no longer on preview.
+  - Redone preset cover.
+  - Variablized metrics.
+- UI:
+  - Capitalize only the first character of field labels.
+  - Collapsible fieldsets (accordions).
+  - Length limits on string fields.
+- UI1:
+  - Jump menu entries open outside the window.
+  - Link to UI2.
+- Window:
+  - Replaced favicon with cover.
+
+——Revision 9, 01/05/2022.
+- Refactored to use Jekyll.
+- Print:
+  - Flexible and scalable backend.
+- Form:
+  - `Outline`.
+  - Modifying an unsaved field does not raise the modified flag.
+- Help:
+  - Font size unit (pt).
+- UI:
+  - Polished forms.
+  - Removed floating menu.
+  - Use EDEN Online's stylesheets.
+
+——Revision 8, 06/10/2021.
+- Help:
+  - Link to the original version.
+- UI:
+  - Moved fieldsets up a level, added header for option.
+
+——Revision 7, 04/08/2021.
+- Help:
+  - Link to this document.
+- Load:
+  - Button width spans that of the document.
+- Preview:
+  - Do not animate background with the `:target` pseudo-class.
+  - Scroll on overflow.
+- Save:
+  - Button width spans that of the document.
+- Template:
+  - Brighten preset cover.
+
+——Revision 6, 03/14/2021.
+- Print:
+  - Fixed floating menu in printout.
+
+——Revision 5, 03/11/2021.
+- Form:
+  - Template text fields' font family follows that of the template.
+- UI:
+  - Document sections.
+  - Remade with Unagi.
+  - Removed sticky menu.
+  - Split `Load` and `Save` into two sections.
+
+——Revision 4, 07/01/2020.
+- UI:
+  - Menu is sticky.
+  - Moved improved instructions as `Help` to page bottom.
+- Window:
+  - Exiting prompts on unsaved changes.
+
+——Revision 3, 06/30/2020.
+- Re-refactored again.
+- Load:
+  - Prompt on unsaved changes.
+- Template:
+  - Restored metrics to those in Blaine Murphy's.
+- UI:
+  - Floating menu.
+  - Integrated EDEN Online stylesheets.
+  - `Preview` menu shortcut.
+
+——Revision 2, 05/31/2020.
+- Form:
+  - Fixed `lower title size`.
+- Print:
+  - Fixed card color not applied to printout with non-Gecko user agents.
+- Template:
+  - Removed residual colon ':' in empty short back side labels.
+- UI:
+  - Injected stopgap designs from EDEN Online and NET-Slides Concept UI.
+
+——Revision 1, 12/13/2019.
+- Form:
+  - Changed `contents separator` preset to "&nbsp;• ".
+- Save:
+  - File name considers upper and lower titles.
+- Template:
+  - Removed residual colon ':' in empty short back side contents.
+- UI:
+  - Menu.
+  - Moved instructions to page bottom.
+  - Swapped `Load` and `Save`.
+
+——Revision 0, 12/04/2019.
+- Reforked and re-refactored.
+- Load.
+- Save.
+- Form:
+  - Bold.
+  - Contents separator.
+  - Fill cover.
+  - Italicize.
+  - Text alignment.
+  - Text visibility.
+
+—Update 0
+
+——Revision 0, 02/18/2019.
+- Initial release.

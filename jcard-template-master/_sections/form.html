@@ -1,0 +1,100 @@
+{%-include_relative _sections/sections/injections.html-%}
+<form>
+<section>
+{{openColumns-}}
+{{openColumnFluid-}}
+<div class="group">
+  <div class="field switch" id="field-short-back">
+    <div class="input">
+      <input id="input-short-back" type="checkbox" />
+    </div>
+    <label for="input-short-back">Short back</label>
+  </div>
+  <div class="field switch" id="field-force-caps">
+    <div class="input">
+      <input id="input-force-caps" type="checkbox" />
+    </div>
+    <label for="input-force-caps">Force CAPS</label>
+  </div>
+  <div class="field switch" id="field-short-spine">
+    <div class="input">
+      <input id="input-short-spine" type="checkbox" />
+    </div>
+    <label for="input-short-spine">Short spine</label>
+  </div>
+</div>
+<div class="group">
+  <div class="field switch" id="field-reverse">
+    <div class="input">
+      <input id="input-reverse" type="checkbox" />
+    </div>
+    <label for="input-reverse">Reverse</label>
+  </div>
+  <div class="field switch" id="field-bold">
+    <div class="input">
+      <input id="input-bold" type="checkbox" />
+    </div>
+    <label class="bolder" for="input-bold">Bold</label>
+  </div>
+  <div class="field switch" id="field-italicize">
+    <div class="input">
+      <input id="input-italicize" type="checkbox" />
+    </div>
+    <label class="oblique" for="input-italicize">Italicize</label>
+  </div>
+</div>
+<div class="field row" id="field-font-family">
+  <label for="input-font-family">Font family:</label>
+  <div class="input fluid">
+    <input id="input-font-family" type="text" list="list-font-family" maxlength="1023" />
+    <datalist id="list-font-family">
+      <option>Alte Haas Grotesk</option>
+      <option>cursive</option>
+      <option>emoji</option>
+      <option>fangsong</option>
+      <option>fantasy</option>
+      <option>math</option>
+      <option>monospace</option>
+      <option>sans-serif</option>
+      <option>serif</option>
+    </datalist>
+  </div>
+</div>
+{{closeColumn-}}
+{{openColumnShorter-}}
+<div class="field row {{-fieldRowShortClass}}" id="field-card-color">
+  <label for="input-card-color">Card color:</label>
+  <div class="input shorter">
+    <input id="input-card-color" type="color" />
+  </div>
+</div>
+<div class="field row {{-fieldRowShortClass}}" id="field-text-color">
+  <label for="input-text-color">Text color:</label>
+  <div class="input shorter">
+    <input id="input-text-color" type="color" />
+  </div>
+</div>
+{{closeColumn-}}
+{{closeColumns-}}
+</section>
+<details>
+<summary><h3>Cover</h3></summary>
+{% include_relative _sections/sections/cover.html-%}
+</details>
+<details open>
+<summary><h3>Titles</h3></summary>
+{% include_relative _sections/sections/titles.html-%}
+</details>
+<details>
+<summary><h3>Footer</h3></summary>
+{% include_relative _sections/sections/footer.html-%}
+</details>
+<details>
+<summary><h3>Notes</h3></summary>
+{% include_relative _sections/sections/notes.html-%}
+</details>
+<details>
+<summary><h3>Contents</h3></summary>
+{% include_relative _sections/sections/contents.html-%}
+</details>
+</form>

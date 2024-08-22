@@ -1,0 +1,34 @@
+{{openColumns-}}
+{{openColumnFluid-}}
+<div class="field row" id="field-note-upper">
+  <label for="input-note-upper">Upper text:</label>
+  <div class="input fluid">
+    <input class="follow-font-family" id="input-note-upper" type="text" maxlength="1023" />
+  </div>
+</div>
+<div class="field row" id="field-note-lower">
+  <label for="input-note-lower">Lower text:</label>
+  <div class="input fluid">
+    <input class="follow-font-family" id="input-note-lower" type="text" maxlength="1023" />
+  </div>
+</div>
+{{closeColumn-}}
+{{openColumnShorter-}}
+<div class="field row {{-fieldRowShortClass}}" id="field-note-size">
+  <label for="input-note-size">Size:</label>
+  <div class="input shorter">
+    <input id="input-note-size" type="number" min="0" max="1023" step="0.1" />
+  </div>
+</div>
+<div class="field row {{-fieldRowShortClass}}" id="field-note-alignment">
+  <label for="input-note-alignment">Alignment:</label>
+  <div class="input shorter">
+    <select id="input-note-alignment">
+      <option value="left">Left</option>
+      <option value="center">Center</option>
+      <option value="right">Right</option>
+    </select>
+  </div>
+</div>
+{{closeColumn-}}
+{{closeColumns-}}

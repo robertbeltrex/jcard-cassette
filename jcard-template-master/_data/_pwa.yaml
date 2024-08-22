@@ -1,0 +1,17 @@
+path: "pwa"
+version: "Revision 4"
+date: 2023-04-04
+noCurtain: false
+noFooter: false
+noHeader: false
+noNavPage: false
+noNavSite: false
+pwaSizeMin: "720 kB"
+head:
+  title: "NET-Installer"
+  manifest: "pwa.webmanifest"
+body:
+  title: "NET-Installer"
+  subtitle: "Manage offline access to J-Card Template."
+menu:
+  - key: "_home"

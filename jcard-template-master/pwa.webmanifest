@@ -1,0 +1,24 @@
+{
+  "name": "J-Card Template",
+  "description": "Printable in-browser template for cassette tape J-cards.",
+  "display": "minimal-ui",
+  "icons": [
+    {
+      "src": "res/media/favicon.png",
+      "sizes": "100x100",
+      "type": "image/png"
+    },
+    {
+      "src": "res/media/favicon-240.png",
+      "sizes": "240x240",
+      "type": "image/png"
+    },
+    {
+      "src": "res/media/cover.png",
+      "sizes": "480x480",
+      "type": "image/png"
+    }
+  ],
+  "scope": "/jcard-template/",
+  "start_url": "/jcard-template/"
+}
